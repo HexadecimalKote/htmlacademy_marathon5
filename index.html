@@ -14,16 +14,16 @@
       <a class="logo">
         <img src="img/logo.svg" width="85" height="22" alt="Логотип дизайн-студии SCANDI: лампа и текст scandi">
       </a>
-      <ul class="site-navigation">
-        <li class="site-navigation-item"><a href="#about">О компании</a></li>
-        <li class="site-navigation-item"><a href="#works">Портфолио</a></li>
-        <li class="site-navigation-item"><a href="#team">Команда</a></li>
-        <li class="site-navigation-item"><a href="#work-algorithm">Как мы работаем</a></li>
-        <li class="site-navigation-item"><a href="#reviews">Отзывы клиентов</a></li>
-        <li class="site-navigation-item"><a href="#contact-us">Оставить заявку</a></li>
+      <ul class="site-navigation without-dot">
+        <li class="site-navigation-item"><a class="link" href="#about">О компании</a></li>
+        <li class="site-navigation-item"><a class="link" href="#works">Портфолио</a></li>
+        <li class="site-navigation-item"><a class="link" href="#team">Команда</a></li>
+        <li class="site-navigation-item"><a class="link" href="#work-algorithm">Как мы работаем</a></li>
+        <li class="site-navigation-item"><a class="link" href="#reviews">Отзывы клиентов</a></li>
+        <li class="site-navigation-item"><a class="link" href="#contact-us">Оставить заявку</a></li>
       </ul>
     </nav>
-    <a class="header-contact-phone" href="tel:+79818574624">+7 (981) 857-46-24</a>
+    <a class="header-contact-phone contact-phone" href="tel:+79818574624">+7 (981) 857-46-24</a>
   </header>
 
   <main>
@@ -38,7 +38,7 @@
     </section>
 
     <section class="about" id="about">
-      <h2 class="section-title">О нас</h2>
+      <h2 class="section-title container-small">О нас</h2>
 
       <div class="about-description container-small">
         <img class="about-image" src="img/about.jpg" width="445" height="465" alt="Красиво сервированый стол: дорогие бокалы, посуда, ваза в форме яйца">
@@ -72,7 +72,7 @@
     </section>
 
     <section class="works container-big" id="works">
-      <h2 class="section-title">Наши работы</h2>
+      <h2 class="section-title works-title">Наши работы</h2>
 
         <div class="works-list">
           <article class="works-item">
@@ -112,11 +112,12 @@
       <a href="#" class="works-show-more">Смотреть ещё</a>
     </section>
 
-    <section class="team container-small" id="team">
+    <div class="team-column">
+      <section class="team container-small" id="team">
 
       <h2 class="section-title">Команда</h2>
 
-      <ul class="team-list">
+      <ul class="team-list without-dot">
         <li class="team-list-item">
           <img src="img/team_member_1.jpg" width="320" height="253" alt="Улыбающаюся девушка с рыжими длинным волосами в синей джинсовой куртке">
           <p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и помогает сделать вашу квартиру красивой и уютной.</p>
@@ -132,35 +133,39 @@
       </ul>
     </section>
 
-    <section class="work-algorithm container-big" id="work-algorithm">
+     <section class="work-algorithm container-big" id="work-algorithm">
 
       <h2 class="section-title">Как мы работаем</h2>
 
       <ol class="algorithm-items">
         <li class="algorithm-item">
-          <span>1</span>
+          <span class="algorithm-step-number">1</span>
           <p>Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</p>
         </li>
         <li class="algorithm-item">
-          <span>2</span>
+          <span class="algorithm-step-number">2</span>
           <p>Подбираем мебель, текстиль, аксессуары. Делаем 3D-визуализацию.</p>
         </li>
         <li class="algorithm-item">
-          <span>3</span>
+          <span class="algorithm-step-number">3</span>
           <p>Находим нужные магазины, помогаем с доставкой и оплатой товаров.</p>
         </li>
         <li class="algorithm-item">
-          <span>4</span>
+          <span class="algorithm-step-number">4</span>
           <p>Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для мелочей</p>
         </li>
       </ol>
     </section>
+    </div>
+
+
+
 
     <section class="reviews container-small" id="reviews">
       <h2 class="section-title">Отзывы</h2>
 
       <div class="reviews-slider">
-        <ul class="reviews-items">
+        <ul class="reviews-items without-dot">
           <li class="reviews-item">
             <article class="reviews-slide">
               <blockquote class="reviews-blockquote-column">
@@ -169,7 +174,7 @@
                   <p>Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко!</p>
                   <p>Буду советовать и своим друзьям к вам обращаться!»</p>
                 </div>
-                <cite>Анна Беловская</cite>
+                <cite class="reviews-author">Анна Беловская</cite>
               </blockquote>
 
               <div class="reviews-image-column">
@@ -188,30 +193,32 @@
 
     </section>
 
-    <section class="contact-us container-big" id="contact-us">
-      <div class="form-column">
-        <h2 class="section-title contact-title">Оставить заявку</h2>
-        <p class="contact-us-desc">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
-        <form id="contact-form" action="https://echo.htmlacademy.ru" method="POST">
+    <section class="contact-us" id="contact-us">
+      <div class="form-wrapper container-big">
+        <div class="form-column">
+          <h2 class="section-title contact-title">Оставить заявку</h2>
+          <p class="contact-us-description">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
+          <form id="contact-form" action="https://echo.htmlacademy.ru" method="POST">
 
-          <label class="visually-hidden">Имя</label>
-          <input type="text" name="contact-form-name" placeholder="Ваше имя" required>
+            <label class="visually-hidden">Имя</label>
+            <input class="input-text" type="text" name="contact-form-name" placeholder="Ваше имя" required>
 
-          <label class="visually-hidden">Телефон</label>
-          <input type="tel" name="contact-form-phone" placeholder="Введите телефон" required>
+            <label class="visually-hidden">Телефон</label>
+            <input class="input-text" type="tel" name="contact-form-phone" placeholder="Введите телефон" required>
 
-          <button class="contact-form-button" type="submit">Отправить заявку</button>
-        </form>
+            <button class="button contact-form-button" type="submit">Отправить заявку</button>
+          </form>
+        </div>
+
+        <img class="contact-image-column" src="img/map.png" width="590" height="624" alt="Офис дизайн-студии SCANDI по адресу г.Санкт-Петербург, Б. Конюшенная, д. 19/8">
+
+      </section>
       </div>
-
-      <img class="contact-image-column" src="img/map.png" width="590" height="624" alt="Офис дизайн-студии SCANDI по адресу г.Санкт-Петербург, Б. Конюшенная, д. 19/8">
-
-    </section>
 
   </main>
 
   <footer class="main-footer container-big">
-    <a class="footer-phone" href="tel:+79818574624">+7 (981) 857-46-24</a>
+    <a class="footer-phone contact-phone" href="tel:+79818574624">+7 (981) 857-46-24</a>
     <p class="footer-address">Адрес: г.Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
     <p class="footer-copyright">ИП Королёва А.А.</p>
   </footer>
