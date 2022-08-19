@@ -38,7 +38,7 @@ body {
   line-height: 30px;
   font-weight: 400;
   background-color: #EFE6E4;
-  background-image: url("/img/bg-promo.jpg");
+  background-image: url("../img/bg-promo.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   color: var(--basic-brown, #533738);
