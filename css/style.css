@@ -61,7 +61,7 @@ img {
 }
 
 .container-small {
-  width: 1035px;
+  width: 1031px;
   margin: 0 auto;
 }
 
@@ -88,7 +88,7 @@ img {
   font-weight: 500;
   color: var(--basic-brown, #533738);
   background-color: var(--basic-red-light, #CC8B86);
-  width: 310px;
+  width: 309px;
   padding: 25px 0;
   text-align: center;
   border: none;
@@ -119,7 +119,7 @@ img {
   display: flex;
   font-size: 16px;
   line-height: 20px;
-  padding: 37px 0 94px 0;
+  padding: 37px 0 93px 0;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -175,12 +175,13 @@ img {
   line-height: 62px;
   font-weight: 400;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .promo-description {
   margin-top: 0;
-  margin-bottom: 21px;
+  margin-bottom: 24px;
+  /* width: 444px; */
 }
 
 /* ABOUT */
@@ -192,11 +193,11 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .about-text {
-  width: 530px;
+  width: 526px;
 }
 
 .about-text p {
@@ -204,14 +205,14 @@ img {
 }
 
 .about-text > p {
-  margin-top: 10px;
-  margin-bottom: 25px;
+  margin-top: -4px;
+  margin-bottom: 33px;
 }
 
 .about-achievements {
   background-color: var(--basic-gray-dark, #8D7370);
   color: var(--basic-white, #ffffff);
-  padding: 85px 0 80px 0;
+  padding: 86px 0;
 }
 
 .about-achievements-list {
@@ -241,6 +242,7 @@ img {
 
 .works-title {
   text-align: left;
+  padding-bottom: 42px;
 }
 
 .works-list {
@@ -284,7 +286,7 @@ img {
   font-size: 30px;
   font-weight: 500;
   line-height: 37px;
-  padding-top: 45px;
+  padding-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
