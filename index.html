@@ -15,12 +15,12 @@
         <img src="img/logo.svg" width="85" height="22" alt="Логотип дизайн-студии SCANDI: лампа и текст scandi">
       </a>
       <ul class="site-navigation without-dot">
-        <li class="site-navigation-item"><a class="link" href="#about">О компании</a></li>
-        <li class="site-navigation-item"><a class="link" href="#works">Портфолио</a></li>
-        <li class="site-navigation-item"><a class="link" href="#team">Команда</a></li>
-        <li class="site-navigation-item"><a class="link" href="#work-algorithm">Как мы работаем</a></li>
-        <li class="site-navigation-item"><a class="link" href="#reviews">Отзывы клиентов</a></li>
-        <li class="site-navigation-item"><a class="link" href="#contact-us">Оставить заявку</a></li>
+        <li class="site-navigation-item"><a class="navigation-link" href="#about">О компании</a></li>
+        <li class="site-navigation-item"><a class="navigation-link" href="#works">Портфолио</a></li>
+        <li class="site-navigation-item"><a class="navigation-link" href="#team">Команда</a></li>
+        <li class="site-navigation-item"><a class="navigation-link" href="#work-algorithm">Как мы работаем</a></li>
+        <li class="site-navigation-item"><a class="navigation-link" href="#reviews">Отзывы клиентов</a></li>
+        <li class="site-navigation-item"><a class="navigation-link" href="#contact-us">Оставить заявку</a></li>
       </ul>
     </nav>
     <a class="header-contact-phone contact-phone" href="tel:+79818574624">+7 (981) 857-46-24</a>
@@ -65,7 +65,6 @@
           <div class="about-achievements-item">
             <dt class="achievements-number">10</dt>
             <dd class="achievements-name">наград</dd>
-          </div>
         </dl>
       </div>
 
@@ -161,15 +160,16 @@
       <h2 class="section-title">Отзывы</h2>
 
       <div class="reviews-slider">
+        <button class="slider-button button-prev" type="button"><span>Назад</span></button>
         <ul class="reviews-items without-dot">
-          <li class="reviews-item">
+          <li class="reviews-item current">
             <article class="reviews-slide">
               <h3 class="visually-hidden">Отзыв Анна Беловская</h3>
               <blockquote class="reviews-blockquote-column">
                 <div class="reviews-text">
-                  <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
-                  <p>Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко!</p>
-                  <p>Буду советовать и своим друзьям к вам обращаться!»</p>
+                  <p class="reviews-text-item">«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
+                  <p class="reviews-text-item">Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко!</p>
+                  <p class="reviews-text-item">Буду советовать и своим друзьям к вам обращаться!»</p>
                 </div>
                 <cite class="reviews-author">Анна Беловская</cite>
               </blockquote>
@@ -181,11 +181,7 @@
             </article>
           </li>
         </ul>
-
-        <div class="slider-controls">
-          <button class="slider-button button-prev" type="button"><span>Назад</span></button>
-          <button class="slider-button button-next" type="button"><span>Вперед</span></button>
-        </div>
+        <button class="slider-button button-next" type="button"><span>Вперед</span></button>
       </div>
     </section>
 
